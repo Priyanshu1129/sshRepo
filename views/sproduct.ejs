@@ -1,0 +1,205 @@
+<%- include('./partials/header.ejs')%>
+
+<title>Shop</title>
+
+<%- include('./partials/navbar.ejs')%>
+
+    <section id="hero">
+        <div class= "flex flex-col items-center vsm:items-start  vsm:flex-row sm:justify-around p-6 md:p-10 lg:p-20">
+            <div class="flex flex-col w-[85%] mb-7 vsm:w-[50%] vsm:px-4 md:w-[40%] lg:w-[30%]">
+                <div class="pb-2">
+                    <img id="mainImg" src="/products/f1.jpg" alt="">
+                </div>
+                <div class="flex justify-between cursor-pointer">
+                    <div class="flex basis-20">
+                        <img class="chosImg" src="/products/f1.jpg" alt="">
+                    </div>
+                    <div class="flex basis-20">
+                        <img class="chosImg" src="/products/f2.jpg" alt="">
+                    </div>
+                    <div class="flex basis-20">
+                        <img class="chosImg" src="/products/f3.jpg" alt="">
+                    </div>
+                    <div class="flex basis-20">
+                        <img class="chosImg" src="/products/f4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="w-[85%] vsm:w-[50%]">
+                <div>
+                    <h6 class="text-base md:text-base xl:text-lg font-medium mb-2 xl:mb-3">Home/T-Shirt</h6>
+                    <h1 class="text-xl md:text-2xl xl:text-2xl font-semibold my-2 xl:my-3">Men's Fashion T Shirt</h1>
+                    <h1 class="text-2xl md:text-3xl xl:text-4xl font-semibold my-2 xl:my-3">$ 199.00</h1>
+                    <select class="block border p-1 my-3 border-gray-600 rounded-sm w-[100px]" name="" id="">
+                        <option value="">Select</option>
+                        <option value="">LG</option>
+                        <option value="">XL</option>
+                        <option value="">XXL</option>
+                    </select>
+                    <input class="border-2 h-[40px] text-center w-[40px]" type="number" value="1" name="" id="">
+                    <button class="text-base font-semibold bg-green-600 px-3 py-2 rounded-sm text-white">Add To Cart</button>
+                </div>
+                <div class="my-5">
+                    <h1 class="text-xl md:text-2xl my-3 font-semibold">Product Details</h1>
+                    <p class="font-semibold md:font-bold text-gray-700 leading-5 md:leading-6 lg:leading-7">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore placeat fugiat facilis praesentium debitis harum est iure? Modi adipisci, aut necessitatibus minima suscipit consequuntur! Reiciendis illo sint accusamus obcaecati!</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="poducts">
+        <div class="text-center m-4">
+            <div class="text-center my-[90px] m-1">
+                <h1 class="text-4xl font-bold m-1">New Arrivals</h1>
+                <p class="text-sm text-gray-500 m-2">Summer Collection New Modern Design</p>
+            <div class="my-5 sm:my-12 text-white"  style="display:flex; flex-wrap: wrap; align-items:center; justify-content:space-around;">
+                <div class="rounded-xl border-2 bg-slate-900 shadow-xl shadow-gray-400 my-2 sm:m-5 p-3 hover:p-1 text-left max-w-[159px] max-h-[300px] lg:max-w-[250px] lg:max-h-[450px]">  <!--style="word-wrap:break-word;" -->
+                    <img class="rounded-2xl" src="/products/n1.jpg" alt="">
+                    <div class="m-2">
+                        <h1 class="font-extra-light text-gray-400 text-sm">adidas</h1>
+                        <h2 class="text-sm sm:max-text-xl font-bold sm:font-bold">Cartoon Astraunout T-Shirts</h2>
+                        <div class="text-yellow-500 text-sm">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="font-bold">$78</h2>
+                    </div>
+                </div>
+                <div class="rounded-xl border-2 bg-slate-900 shadow-xl shadow-gray-400 my-2 sm:m-5 p-3 hover:p-1 text-left max-w-[159px] max-h-[300px] lg:max-w-[250px] lg:max-h-[450px]">  <!--style="word-wrap:break-word;" -->
+                    <img class="rounded-2xl" src="/products/n2.jpg" alt="">
+                    <div class="m-2">
+                        <h1 class="font-extra-light text-gray-400 text-sm">adidas</h1>
+                        <h2 class="text-sm sm:max-text-xl font-bold sm:font-bold">Cartoon Astraunout T-Shirts</h2>
+                        <div class="text-yellow-500 text-sm">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="font-bold">$78</h2>
+                    </div>
+                </div>
+                <div class="rounded-xl border-2 bg-slate-900 shadow-xl shadow-gray-400 my-2 sm:m-5 p-3 hover:p-1 text-left max-w-[159px] max-h-[300px] lg:max-w-[250px] lg:max-h-[450px]">  <!--style="word-wrap:break-word;" -->
+                    <img class="rounded-2xl" src="/products/n3.jpg" alt="">
+                    <div class="m-2">
+                        <h1 class="font-extra-light text-gray-400 text-sm">adidas</h1>
+                        <h2 class="text-sm sm:max-text-xl font-bold sm:font-bold">Cartoon Astraunout T-Shirts</h2>
+                        <div class="text-yellow-500 text-sm">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="font-bold">$78</h2>
+                    </div>
+                </div>
+                <div class="rounded-xl border-2 bg-slate-900 shadow-xl shadow-gray-400 my-2 sm:m-5 p-3 hover:p-1 text-left max-w-[159px] max-h-[300px] lg:max-w-[250px] lg:max-h-[450px]">  <!--style="word-wrap:break-word;" -->
+                    <img class="rounded-2xl" src="/products/n4.jpg" alt="">
+                    <div class="m-2">
+                        <h1 class="font-extra-light text-gray-400 text-sm">adidas</h1>
+                        <h2 class="text-sm sm:max-text-xl font-bold sm:font-bold">Cartoon Astraunout T-Shirts</h2>
+                        <div class="text-yellow-500 text-sm">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="font-bold">$78</h2>
+                    </div>
+                </div>
+                <div class="rounded-xl border-2 bg-slate-900 shadow-xl shadow-gray-400 my-2 sm:m-5 p-3 hover:p-1 text-left max-w-[159px] max-h-[300px] lg:max-w-[250px] lg:max-h-[450px]">  <!--style="word-wrap:break-word;" -->
+                    <img class="rounded-2xl" src="/products/n5.jpg" alt="">
+                    <div class="m-2">
+                        <h1 class="font-extra-light text-gray-400 text-sm">adidas</h1>
+                        <h2 class="text-sm sm:max-text-xl font-bold sm:font-bold">Cartoon Astraunout T-Shirts</h2>
+                        <div class="text-yellow-500 text-sm">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="font-bold">$78</h2>
+                    </div>
+                </div>
+                <div class="rounded-xl border-2 bg-slate-900 shadow-xl shadow-gray-400 my-2 sm:m-5 p-3 hover:p-1 text-left max-w-[159px] max-h-[300px] lg:max-w-[250px] lg:max-h-[450px]">  <!--style="word-wrap:break-word;" -->
+                    <img class="rounded-2xl" src="/products/n6.jpg" alt="">
+                    <div class="m-2">
+                        <h1 class="font-extra-light text-gray-400 text-sm">adidas</h1>
+                        <h2 class="text-sm sm:max-text-xl font-bold sm:font-bold">Cartoon Astraunout T-Shirts</h2>
+                        <div class="text-yellow-500 text-sm">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="font-bold">$78</h2>
+                    </div>
+                </div>
+                <div class="rounded-xl border-2 bg-slate-900 shadow-xl shadow-gray-400 my-2 sm:m-5 p-3 hover:p-1 text-left max-w-[159px] max-h-[300px] lg:max-w-[250px] lg:max-h-[450px]">  <!--style="word-wrap:break-word;" -->
+                    <img class="rounded-2xl" src="/products/n7.jpg" alt="">
+                    <div class="m-2">
+                        <h1 class="font-extra-light text-gray-400 text-sm">adidas</h1>
+                        <h2 class="text-sm sm:max-text-xl font-bold sm:font-bold">Cartoon Astraunout T-Shirts</h2>
+                        <div class="text-yellow-500 text-sm">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="font-bold">$78</h2>
+                    </div>
+                </div>
+                <div class="rounded-xl border-2 bg-slate-900 shadow-xl shadow-gray-400 my-2 sm:m-5 p-3 hover:p-1 text-left max-w-[159px] max-h-[300px] lg:max-w-[250px] lg:max-h-[450px]">  <!--style="word-wrap:break-word;" -->
+                    <img class="rounded-2xl" src="/products/n8.jpg" alt="">
+                    <div class="m-2">
+                        <h1 class="font-extra-light text-gray-400 text-sm">adidas</h1>
+                        <h2 class="text-sm sm:max-text-xl font-bold sm:font-bold">Cartoon Astraunout T-Shirts</h2>
+                        <div class="text-yellow-500 text-sm">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="font-bold">$78</h2>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+<%- include('./partials/signup.ejs')%>
+
+
+<%- include('./partials/footer.ejs')%>
+
+    <script>
+        const mainImg = document.getElementById('mainImg');
+        const chossedImg = document.getElementsByClassName('chosImg');
+
+        chossedImg[0].onclick = function(){
+            mainImg.src = chossedImg[0].src;
+        }
+        chossedImg[1].onclick = function(){
+            mainImg.src = chossedImg[1].src;
+        }
+        chossedImg[2].onclick = function(){
+            mainImg.src = chossedImg[2].src;
+        }
+        chossedImg[3].onclick = function(){
+            mainImg.src = chossedImg[3].src;
+        }
+    
+    </script>

@@ -1,0 +1,146 @@
+<%- include('./partials/header.ejs')%>
+
+<title>Home</title>
+
+<%- include('./partials/navbar.ejs')%>
+
+    <section id="hero" class="">
+        <!-- <div  class="h-screen pl-[8vw] bg-[url('<%= hero.bg_img_div.url %>')] bg-cover bg-[top_0_right_30%] sm:bg-[top_0_right_0] shadow-lg"> -->
+        <div class="home-hero">
+            <div class="pt-[28vh] sm:pt-[34vh] leading-extra-loose font-medium font-serif">
+                <p class="text-base  sm:text-lg text-orange-700"><%= hero.text_div.first %></p>
+                <h2 class="text-2xl sm:text-5xl"><%= hero.text_div.second %></h2>
+                <h1 class="text-4xl sm:text-6xl text-orange- text-blue-900"><%= hero.text_div.third %></h1>
+                <span class="text-sm text-slate-700"><%= hero.text_div.fourth %></span>
+            </div>
+            <div>
+                <button href="shop.html" class="bg-[url('/button.png')] bg-center bg-cover font-semibold w-[120px] h-14 block">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="feature">
+        <div class="my-[8vh] mx-[20px] text-center text-md font-bold" style="display:flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <% feature.feature_div.forEach((item)=>{ %>
+                <div class="border-2 border-gray-300 shadow-lg shadow-slate-400	 rounded-full p-[5px]" style="margin: 10px 1vw ;">
+                    <img class="" src="<%= item.url %>" alt="">
+                    <h3 class="rounded-lg p-1 mx-6 bg-gradient-to-r <%= item.heading_bg %> border shadow-sm shadow-gray-500"><%= item.heading %></h3>
+                </div>
+            <% }) %>
+        </div>    
+    </section>
+
+    <section id="poducts">
+        <div class="text-center m-4">
+            <h1 class="text-2xl font-bold sm:text-4xl"><%= product.heading_div.first %></h1>
+            <h6 class="text-gray-400 font-bold m-2"><%= product.heading_div.second %></h6>
+            <div class="my-5 text-white"  style="display:flex; flex-wrap: wrap; align-items:center; justify-content:space-around;">
+                
+                <% product.product_div.forEach((item)=>{ %>
+                    <div class="rounded-xl border-2 bg-slate-900 shadow-md shadow-gray-400 my-2 sm:m-5 p-3 text-left max-w-[159px] max-h-[300px] lg:max-w-[250px] lg:max-h-[450px]">  <!--style="word-wrap:break-word;" -->
+                        <img class="rounded-2xl" src="<%= item.url %>" alt="">
+                        <div class="m-2">
+                            <h1 class="font-extra-light text-gray-400 text-sm">adidas</h1>
+                            <h2 class="text-sm sm:max-text-xl font-bold sm:font-bold"><%= item.about %></h2>
+                            <div class="text-yellow-500 text-sm">
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                            </div>
+                            <h2 class="font-bold"><%= item.price %></h2>
+                        </div>
+                    </div>
+                <% }) %>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="banner_1">
+        <div class="bg-[url('/banner/b1.jpg')] h-[60vh] sm:h-[40vh] bg-center my-7 flex items-center justify-center">
+            <div class="text-center mx-2 text-white font-semibold" style="font-family:comfartaa, cursive;">
+                <h6 class="text-xl mb-4 sm:mb-4">Repair Services</h6>
+                <h1 class="text-2xl mb-5">Up to <span class="text-red-400">70% off</span> - All t-Shirts & Accessories</h1>
+                <button class="text-gray-900 font-light bg-slate-200 px-3 py-2 border-1 rounded-xl sm:rounded-md hover:bg-slate-500 hover:text-white">Explore More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="new_products">
+        <div class="text-center my-[90px] m-4">
+            <h1 class="text-4xl font-bold m-3"><%= new_product.heading_div.first %></h1>
+            <p class="text-sm text-gray-500 m-2"><%= new_product.heading_div.second %></p>
+
+            <div class="my-5" style="display:flex; flex-wrap:wrap; justify-content: space-around; align-items: center;">
+                
+            <% new_product.product_div.forEach((item)=>{ %>
+                <div class="bg-slate p-3 hover:p-0 my-2 sm:m-5 shadow-xl border-2 shadow-gray-300 rounded-2xl max-w-[159px] max-h-[300px] lg:max-w-[250px] lg:max-h-[450px] text-gray-900">
+                    <img class="rounded-2xl shadow-lg shadow-gray-400" src="<%= item.url %>" alt="">
+                    <div class="m-2">
+                        <h1 class="font-extra-light text-gray-600 text-sm">adidas</h1>
+                        <h2 class="text-base sm:max-text-xl font-bold whitespace-normal" style="font-family: 'Hind', sans-serif;"><%= item.about %></h2>
+                        <div class="text-yellow-500 text-sm">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <h2 class="font-bold"><%= item.price %></h2>
+                    </div>
+                </div>
+            <% }) %>
+            
+            </div>
+        </div>
+    </section>
+
+    <section id="banner_2">
+        <div class="my-[70px] lg:w-[80%] m-auto">
+            <div class="md:flex flex-wrap justify-center text-white">
+                <div class="m-5 md:m-2 p-6 bg-[url('banner/b17.jpg')] bg-center bg-cover w-100% h-[300px]  md:w-[45%] lg:w-[45%] md:h-[26vw] lg:h-[23vw]">
+                    <div class="h-[100%] w-[100%] flex flex-col justify-center">
+                        <p class="text-base tab:text-base minicom:text-xl font-medium my-1 text-yellow-700">crazy deals</p>
+                        <h1 class="text-2xl font-bold md:2xl lg:text-3xl minicom:text-4xl md:font-semibold my-1">buy 1 get 1 free</h1>
+                        <p class="tab:text-sm minicom:text-base font-bold my-1">The best classic sale is on sale at cara</p>
+                        <button class="w-28 my-4 p-2  font-bold border bg-gradient-to-r from-pink-500 hover:to-yellow-500 hover:border-none">Learn More</button>
+                    </div>
+                </div> 
+                <div class="m-5 md:m-2 p-6 bg-[url('banner/b4.jpg')] bg-center bg-cover  w-100% h-[300px] md:w-[45%] lg:w-[45%] md:h-[26vw] lg:h-[23vw]">
+                    <div class="h-[100%] w-[100%] flex flex-col justify-center">
+                        <p class="text-base tab:text-base minicom:text-xl font-medium my-1 text-gray-700">spring/summer</p>
+                        <h1 class="text-2xl font-bold md:2xl lg:text-3xl minicom:text-4xl md:font-semibold my-1">new footwear collection</h1>
+                        <p class="tab:text-sm minicom:text-base font-bold my-1">The best classic sale is on sale at cara</p>
+                        <button class="w-28 my-4 p-2 font-bold bg-gradient-to-r  hover:from-purple-600 md:from-yellow-500 border">Collection</button>
+                    </div>
+                </div>
+            </div>
+            <div class="md:flex flex-wrap justify-center lg:justify-center text-white">
+                <div class="m-5 md:m-1 p-6 bg-[url('banner/b7.jpg')] bg-center bg-cover w-100% h-[300px]  md:w-[30%] lg:w-[30%] md:h-[19vw] lg:h-[17vw]">
+                    <div class="flex flex-col justify-center h-[100%]">
+                        <h1 class="text-2xl font-semibold md:text-2xl minicom:text-3xl minicom:font-semibold my-1">SEASONAL SALE</h1>
+                        <p class="text-xl md:text-sm my-1 text-red-500 font-medium">Winter Collection 50% oFF</p>
+                    </div>
+                </div> 
+                <div class="m-5 md:m-1 p-6 bg-[url('banner/b18.jpg')] bg-center bg-cover  w-100% h-[300px] md:w-[30%] lg:w-[30%] md:h-[19vw] lg:h-[17vw]">
+                    <div class="flex flex-col justify-center h-[100%]">
+                        <h1 class="text-2xl font-semibold md:text-2xl minicom:text-3xl bold minicom:font-semibold my-1">UPCOMING SEASON</h1>
+                        <p class="text-xl md:text-sm my-1 text-red-500 font-medium">Winter Collection 50% oFF</p>
+                    </div>
+                </div>
+                <div class="m-5 md:m-1 p-6 bg-[url('banner/b10.jpg')] bg-center bg-cover w-100% h-[300px]  md:w-[30%] lg:w-[30%] md:h-[19vw] lg:h-[17vw]">
+                    <div class="flex flex-col justify-center h-[100%]">
+                        <h1 class="text-2xl font-semibold md:text-2xl minicom:text-3xl bold minicom:font-semibold my-1">T-SHIRTS</h1>
+                        <p class="text-xl md:text-sm my-1 text-red-500 font-medium minicom:bg-black"></p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+
+<%- include('./partials/signup.ejs')%>
+
+<%- include('./partials/footer.ejs')%>

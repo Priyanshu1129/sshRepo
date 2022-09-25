@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home-hero{
+    @apply h-screen pl-[8vw] bg-[url('<%= hero.bg_img_div.url %>')] bg-cover bg-[top_0_right_30%] sm:bg-[top_0_right_0] shadow-lg;
+}
