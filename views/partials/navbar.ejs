@@ -6,26 +6,18 @@
                 <img src="<%= header.logo_div.url %>" alt="">
             </div>
             <div class="Right">
-                <!-- sm:flex items-center -->
                 <nav class="fixed top-0 sm:top-6 -right-80 sm:right-[10%] duration-500 bg-white bg-opacity-80 shadow-lg sm:shadow-none sm:bg-transparent  h-screen sm:h-auto w-44 sm:w-fit p-9 sm:p-0 sm:mr border-black sm:border-none font-medium"id="navbar">
                     <div id="cross" class="hidden p-2 absolute top-2 right-2">
-                        <!-- <i class="fa-sharp fa-solid fa-circle-xmark"></i> -->
                         <i class="fa-sharp fa-solid fa-xmark"></i>
-                        <!-- <i class="fa-light fa-xmark"></i> -->
                     </div> 
                     <ul class="sm:flex font-sans text-lg font-bold">
                         <% header.nav_div.forEach((item,index)=>{ %>
                         <li class="py-2 sm:py-0 sm:pr-8"><a class="hover:text-orange-400 hover:underline" href="<%= item.url %>"><%= item.name %></a></li>
                         <% }) %>
-                        <!-- <li class="py-2 sm:py-0 sm:pr-8"><a class="hover:text-orange-400 hover:underline" href="shop">Shop</a></li>
-                        <li class="py-2 sm:py-0 sm:pr-8"><a class="hover:text-orange-400 hover:underline" href="blog">Blog</a></li>
-                        <li class="py-2 sm:py-0 sm:pr-8"><a class="hover:text-orange-400 hover:underline" href="about">About</a></li>
-                        <li class="py-2 sm:py-0 sm:pr-8"><a class="hover:text-orange-400 hover:underline" href="contact">Contact</a></li> -->
                     </ul>
                 </nav>
                 <div class="flex w-16 justify-between">
                     <div class=" sm:fixed top-6 right-[5%]">
-                        <!-- <i class="fa-regular fa-star"></i> -->
                         <i class="fa-regular fa-bag-shopping"></i>
                     </div>
                     <div id="bar" class="sm:hidden">
